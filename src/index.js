@@ -1,3 +1,5 @@
+import renderHome from "./home";
+
 function createHtmlElement(tag, classList, id, content) {
     const element = document.createElement(tag);
 
@@ -12,4 +14,10 @@ function createHtmlElement(tag, classList, id, content) {
     if (content) {
         element.textContent = content;
     };
+
+    return element;
 };
+
+renderHome();
+
+export { createHtmlElement };
