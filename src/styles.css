@@ -4,12 +4,38 @@
     box-sizing: border-box;
 }
 
+button {
+    font: inherit;
+}
+
 :root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     --bg-color: #36454F;
     --text-color: #FFF;
     --gold-color: #BD9254;
     --navbar-height: 70px;
     --margin: 48px;
+}
+
+#navbar {
+    display: flex;
+    background-color: var(--bg-color);
+    height: var(--navbar-height);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#navbar button {
+    color: var(--text-color);
+    border: none;
+    background-color: var(--bg-color);
+    font-size: 1rem;
+}
+
+#navbar button:hover {
+    border-bottom: 2px solid var(--gold-color);
+    cursor: pointer;
 }
 
 #content {
@@ -26,7 +52,7 @@
 }
 
 .title {
-    font-size: 60px;
+    font-size: 3.5rem;
     position: relative;
     margin-bottom: var(--margin);
 }
