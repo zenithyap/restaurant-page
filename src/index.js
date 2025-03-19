@@ -1,3 +1,4 @@
+import "./styles.css";
 import renderHome from "./home";
 
 function createHtmlElement(tag, classList, id, content) {
