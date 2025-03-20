@@ -59,6 +59,16 @@ button {
     padding: var(--margin);
 }
 
+#about {
+    background-color: var(--bg-color);
+    align-items: center;
+    padding: var(--margin);
+}
+
+#about p {
+    margin-top: var(--margin);
+}
+
 .white {
     color: var(--text-color);
 }
@@ -69,6 +79,11 @@ button {
 
 .gold {
     color: var(--gold-color);
+}
+
+p {
+    max-width: 66ch;
+    text-align: center;
 }
 
 .title {
@@ -94,5 +109,4 @@ button {
     gap: 12px;
     text-align: center;
     margin-top: var(--margin);
-    max-width: 66ch;
 }
