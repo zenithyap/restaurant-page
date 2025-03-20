@@ -38,17 +38,32 @@ button {
     cursor: pointer;
 }
 
-#content {
+#home,
+#menu,
+#about {
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-color);
     height: calc(100vh - var(--navbar-height));
+}
+
+#home {
+    background-color: var(--bg-color);
     justify-content: center;
     align-items: center;
 }
 
+#menu {
+    background-color: #FFF;
+    align-items: center;
+    padding: var(--margin);
+}
+
 .white {
     color: var(--text-color);
+}
+
+.dark {
+    color: var(--bg-color);
 }
 
 .title {

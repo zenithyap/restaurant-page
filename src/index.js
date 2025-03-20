@@ -1,5 +1,6 @@
 import "./styles.css";
 import renderHome from "./home";
+import renderMenu from "./menu";
 
 function createHtmlElement(tag, classList, id, content) {
     const element = document.createElement(tag);
