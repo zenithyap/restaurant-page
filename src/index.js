@@ -19,6 +19,21 @@ function createHtmlElement(tag, classList, id, content) {
     return element;
 };
 
+function handleNavbarClick(e) {
+    const nav = e.target.textContent;
+
+    if (nav === "Home") {
+        renderHome();
+    } else if (nav === "Menu") {
+        renderMenu();
+    } else if (nav === "About") {
+        renderAbout();
+    }
+};
+
+const navbar = document.querySelector("#navbar");
+navbar.addEventListener("click", handleNavbarClick);
+
 renderHome();
 
 export { createHtmlElement };
