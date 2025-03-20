@@ -67,6 +67,10 @@ button {
     color: var(--bg-color);
 }
 
+.gold {
+    color: var(--gold-color);
+}
+
 .title {
     font-size: 3.5rem;
     position: relative;
@@ -82,4 +86,13 @@ button {
     left: 50%;
     transform: translateX(-50%);
     border-bottom: 4px solid var(--gold-color);
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    margin-top: var(--margin);
+    max-width: 66ch;
 }
